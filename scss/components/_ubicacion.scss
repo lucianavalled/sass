@@ -1,0 +1,16 @@
+.ubicacion{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: grid;
+    justify-content: center;
+    background-color: beige;
+}
+.mapa{
+ padding-top: 50px;
+}
+@media only screen and (max-width:768px) {
+    .mapa{
+             width: auto;
+
+         }
+        }
