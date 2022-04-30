@@ -1,13 +1,25 @@
-h2{
-    color: black;
+h1,h2,h3{
+    color: #000000;
     text-align:  $alineacion;
     font-size:20px;
     margin: 10px; 
 }
-h4{
-    text-align:  $alineacion;
-    color: $gris;
-    font-size: 25px;
-    margin-top: 40px;
-  
+
+h5{
+    color: #ffffff;
 }
+$estilos:(
+    color: $gris,
+    alineacion: $alineacion,
+    fuente: 25px,
+    margen: 40px,
+);
+ h4{
+     color: map-get($estilos, color);
+     text-align: map-get($estilos, alineacion);
+     font-size: map-get($estilos, fuente);
+     margin-top: map-get($estilos, margen);
+
+ }
+
+

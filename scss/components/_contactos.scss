@@ -1,3 +1,7 @@
+@mixin tamanio($height, $width){
+    height: $height;
+    width: $width;
+}
 .fondoform{
     background-image: url(../img/AULA6.jpg);
     background-size: 100vw 100vh;
@@ -10,8 +14,7 @@
     padding-top: 50px;
 }
 form{
-    height: 600px;
-    width: 450px;
+    @include tamanio(600px,450px);
     background: rgba(0, 0, 0, 0.4);
     padding-top:40px;
     box-sizing: border-box;
